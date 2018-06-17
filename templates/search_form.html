@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+    <p>继承了 base.html 文件</p>
+    <p>HTTP请求--GET方法</p>
+    <form action="/search" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="搜索">
+    </form>
+{% endblock %}
